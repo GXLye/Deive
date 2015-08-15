@@ -31,6 +31,10 @@
 		18918DE81B7FD7C000134B4D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18918DE71B7FD7C000134B4D /* SystemConfiguration.framework */; };
 		18918DEB1B7FD7D900134B4D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18918DE91B7FD7D900134B4D /* libsqlite3.dylib */; };
 		18918DEC1B7FD7D900134B4D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18918DEA1B7FD7D900134B4D /* libz.dylib */; };
+		18918DF21B7FDCDC00134B4D /* ClassCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18918DF11B7FDCDC00134B4D /* ClassCollectionViewController.swift */; };
+		18918DF41B7FDEAE00134B4D /* ClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18918DF31B7FDEAE00134B4D /* ClassCollectionViewCell.swift */; };
+		18918DF61B7FE19100134B4D /* ClassCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18918DF51B7FE19100134B4D /* ClassCollectionReusableView.swift */; };
+		18918DF81B7FED6B00134B4D /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18918DF71B7FED6B00134B4D /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,11 @@
 		18918DE71B7FD7C000134B4D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		18918DE91B7FD7D900134B4D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		18918DEA1B7FD7D900134B4D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		18918DED1B7FDC3C00134B4D /* Deive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Deive-Bridging-Header.h"; sourceTree = "<group>"; };
+		18918DF11B7FDCDC00134B4D /* ClassCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCollectionViewController.swift; sourceTree = "<group>"; };
+		18918DF31B7FDEAE00134B4D /* ClassCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		18918DF51B7FE19100134B4D /* ClassCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCollectionReusableView.swift; sourceTree = "<group>"; };
+		18918DF71B7FED6B00134B4D /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +139,15 @@
 		186EF9511B7FB4C700AF9A57 /* Deive */ = {
 			isa = PBXGroup;
 			children = (
+				18918DED1B7FDC3C00134B4D /* Deive-Bridging-Header.h */,
 				18918DD81B7FD73B00134B4D /* Framework */,
 				186EF9541B7FB4C700AF9A57 /* AppDelegate.swift */,
 				186EF9561B7FB4C700AF9A57 /* FirstViewController.swift */,
 				186EF9581B7FB4C700AF9A57 /* SecondViewController.swift */,
+				18918DF51B7FE19100134B4D /* ClassCollectionReusableView.swift */,
+				18918DF11B7FDCDC00134B4D /* ClassCollectionViewController.swift */,
+				18918DF71B7FED6B00134B4D /* PickerViewController.swift */,
+				18918DF31B7FDEAE00134B4D /* ClassCollectionViewCell.swift */,
 				186EF95A1B7FB4C700AF9A57 /* Main.storyboard */,
 				186EF95D1B7FB4C800AF9A57 /* Images.xcassets */,
 				186EF95F1B7FB4C800AF9A57 /* LaunchScreen.xib */,
@@ -292,8 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				186EF9591B7FB4C700AF9A57 /* SecondViewController.swift in Sources */,
+				18918DF41B7FDEAE00134B4D /* ClassCollectionViewCell.swift in Sources */,
 				186EF9551B7FB4C700AF9A57 /* AppDelegate.swift in Sources */,
 				186EF9571B7FB4C700AF9A57 /* FirstViewController.swift in Sources */,
+				18918DF61B7FE19100134B4D /* ClassCollectionReusableView.swift in Sources */,
+				18918DF81B7FED6B00134B4D /* PickerViewController.swift in Sources */,
+				18918DF21B7FDCDC00134B4D /* ClassCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Deive",
@@ -428,6 +447,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Deive/Deive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -435,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Deive",
@@ -443,6 +465,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Deive/Deive-Bridging-Header.h";
 			};
 			name = Release;
 		};
