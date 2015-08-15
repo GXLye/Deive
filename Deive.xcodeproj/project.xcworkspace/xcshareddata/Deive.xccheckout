@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8735B83D-D9CC-4910-A20B-4205F79A7358</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Deive</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6C0F2C902B1AADB7E7FAB491599D462EE924374A</key>
+		<string>https://github.com/GXLye/Deive.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Deive.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6C0F2C902B1AADB7E7FAB491599D462EE924374A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/GXLye/Deive.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6C0F2C902B1AADB7E7FAB491599D462EE924374A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6C0F2C902B1AADB7E7FAB491599D462EE924374A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Deive</string>
+		</dict>
+	</array>
+</dict>
+</plist>
