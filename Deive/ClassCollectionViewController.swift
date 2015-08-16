@@ -153,7 +153,21 @@ class ClassCollectionViewController: PFQueryCollectionViewController, RefreshVie
             cell.thumbnail.loadInBackground()
         }
         
-        println(object)
+        switch type {
+        case 1:
+            cell.background.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 235/255.0, alpha: 1.0)
+            
+        case 2:
+            cell.background.backgroundColor = UIColor(red: 213/255.0, green: 214/255.0, blue: 195/255.0, alpha: 1.0)
+            
+        case 3:
+            cell.background.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 235/255.0, alpha: 1.0)
+            
+        case 4:
+            cell.background.backgroundColor = UIColor(red: 213/255.0, green: 214/255.0, blue: 195/255.0, alpha: 1.0)
+        default:
+            println("Invalid type")
+        }
         
         return cell
     }
